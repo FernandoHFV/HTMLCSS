@@ -1,0 +1,37 @@
+body{
+    font-family: sans-serif;
+}
+
+p{
+    background-color: #ccc;
+}
+
+h1{
+    background-color: #ccc;
+    padding: 16px; /* Relação entre as extremidades do meu elemento e o texto, é o espaço entre o texto e o teto ou lateral do elemento (Interno) */
+    /*O padding pode ser definido nas quatro extremidades do elemento e devem seguir a seguinte ordem: Top, Rirght, Bottom, Left. */
+    
+    margin: 16px; /* Relação entre a as extremidades do elemento pai e o elemento filho, é o espaço entre dois elementos. (Externo) */
+    /*O margin pode ser definido nas quatro extremidades do elemento e devem seguir a seguinte ordem: Top, Rirght, Bottom, Left. */
+
+    /*Caso omitir algum ele repete a a informação para o lado oposto.*/
+
+    
+}
+h2{
+    background-color: #ccc;
+    width: 1460px; /* Largura do meu elemento */
+    height: 20px; /* Altura do meu elemento */
+
+}
+
+.exemplo1 {
+
+    border: 5px dotted blue; /*Abreviação de espessura, tipo e cor*/
+    border-width: 5px;
+    border-style: dotted;
+    border-color: blue;
+    
+}
+
+/**/

@@ -1,0 +1,176 @@
+.flexbox{
+    height: 250px;
+    border: 3px solid red;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.flexbox div{
+    border: 2px solid orange;
+    width: 150px;
+    margin: 15px;
+}
+
+.flex-conteiner1{
+    flex-wrap: nowrap; /* SEM QUEBRA DE LINHAS */
+    flex-direction: row; /* Faz com que os elementos se comportem em coluna ou linha */
+    flex-flow: row nowrap; /* atalho para os dois */
+}
+
+.flex-conteiner2{
+    justify-content: space-evenly; /* Ajusta o conteudo: Start, end, center. Ajusta também o espaço entre si. */
+
+
+}
+
+.flex-conteiner2 div{
+    width: 30px;
+    margin: 0;
+}
+
+.flex-conteiner3{
+justify-content: space-around; /* Vertical */
+align-items: center; /* Horizontal */
+
+}
+
+.flex-conteiner3 div {
+width: 30px;
+margin: 0;
+
+}
+
+.flex-conteiner4{
+justify-content: space-around; /* Vertical */
+align-items: center; /* Horizontal */
+align-content: flex-start; /* Quando tiver mais de uma linha*/
+
+}
+
+.flex-conteiner4 div {
+width: 30px;
+margin: 0;
+
+}
+.flexbox div{
+    border: 2px solid orange;
+    width: 300px;
+    margin: 15px;
+}
+
+.flex-conteiner2 div{
+    width:  30px;
+}
+
+/*
+Main: Vertical
+Cross: Horizontal
+
+O comportamento depende do direction. se ele se comporta como collum ou row.
+
+Se for collum: Eu trato o main e cross, no sentido vertical. Logo o cross se torna a largura e o main altura.
+
+*/
+
+.flex-conteiner6{
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.flex-conteiner6 div{
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    
+}
+
+/* 
+O flaxis basis ele é semelhante a largura, e ele irá prevalecer ela.
+Auto: Ve se existe width, se existir mantem ela.
+
+Se o elemento se comportar na directon collum ele se tornará a altura.
+
+*/
+
+.flex-conteiner7{
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.flex-conteiner7 div{
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    
+}
+
+.flex-conteiner7 .div2{
+    flex-basis: 100px; 
+}
+
+/*
+
+flex-grow: Pega o espaço sobrando (Main Axis) e vai distribuir entre os elementos.
+Ou aplicar em único elemento.
+
+gap: Coloca um espaçamento entre os elementos(Sem considerar as bordas.)
+
+ELe acompanha o movimento da tela.
+
+flex-Shrink: Distribui o espaço nescessário que ele precisa diminuir para que caiba no flex container
+
+Resumidamente: Se pensarmo no main axis como uma linha (flex basis), o grow pega o espaço livre e distribui para os elementos, se a tela for reduzida
+ele vai reduzindo das que possui uma maior quantia de grow.
+
+O shrink funciona de maneira inversa, quando a tela começar a ser reduzida ele vai pegar do elemento que tem mais shrink e começar a tirar esse
+espaço do elemento.
+
+Posso resumir tudo isso em: flex: grow shrink e basis: 1 3 200px.
+
+*/
+
+.flex-conteiner8{
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-conteiner8 div{
+    background-color: orange;
+    flex-basis: 100px; 
+    flex-grow: 1; 
+}
+
+.flex-conteiner9{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.flex-conteiner9 div{
+    background-color: blue;
+    flex-basis: 100px; 
+    flex-grow: 1; 
+}
+
+.flex-conteiner9 .div1{
+    flex-shrink: 1; 
+    /* Conforme o ajuste da tela, o espaço a ser cedido primeiro será o dela */
+}
+
+/* 
+Order: estabelece a ordem em que este elemento irá se posicionar.
+align-self: Define o align de unico elemento
+
+*/
+
+.flex-conteiner10 div{
+    background-color: green;
+    font-size: 36px;
+    color:aliceblue;
+    
+}
+
+.flex-conteiner10 .div2 {
+    order: 1;
+    align-self:center;
+}

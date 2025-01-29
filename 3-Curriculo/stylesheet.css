@@ -1,0 +1,134 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; /* Fonte */
+    background-color: #d2b48c;
+}
+
+h1{
+    
+    color: #654321;                         /* Cor da fonte */
+    font-size: 30px;                          /* Tamanho da fonte */
+    text-align: center;                       /* Centralizando */
+    background-color: #f5f5dc;              /* Cor de fundo */
+    margin: 20px 10% 20px;                    /* Margem de cima/lados */
+    padding: 10px;                            /* Espaçamento interior */
+    border-style:double;
+    
+ }
+
+ h2{   
+    color: #654321;                         /* Cor da fonte */
+    font-size: 30px;                          /* Tamanho da fonte */
+    text-align: center;                       /* Centralizando */
+    background-color: #f5f5dc;              /* Cor de fundo */
+    margin: 20px 10% 20px;                    /* Margem de cima/lados */
+    padding: 10px;                            /* Espaçamento interior */
+    border-style:double;
+ }
+
+ p{
+        font-size: 13px;                          /* Tamanho da fonte */
+        margin: 20px 10% 20px;                  /* Espaçamento externo */
+        text-align: left;                         /* Texto na esquerda */
+       
+        
+     }
+ 
+.p1{                       
+    padding: 10px;                                 /*Espaçamento interno*/
+    text-align: center;                            /*Centralizando*/
+          
+    }
+
+.p2{                   
+    padding: 10px;                                /*Espaçamento interno*/
+    text-align: center;                           /*Centralizando*/
+          
+    }
+     
+.Experiencia{
+    color: #654321;                          /* Cor da fonte */
+    font-size: 20px;                          /* Tamanho da fonte */
+    text-align: center;                       /* Centralizando */
+    background-color: #f5f5dc;              /* Cor de fundo */                              /* Largura do elemento */
+    text-decoration: underline;               /* Sublinhar */
+    padding: 5px;                            /* Espaçamento interior */
+    border-style:double;                     /*Borda*/                                  
+}
+
+.Formaçao{
+    color: #654321;                          /* Cor da fonte */
+    font-size: 20px;                          /* Tamanho da fonte */
+    text-align: center;                       /* Centralizando */
+    background-color: #f5f5dc;              /* Cor de fundo */                             /* Largura do elemento */
+    text-decoration: underline;               /* Sublinhar */
+    padding: 5px;                            /* Espaçamento interior */
+    border-style:double;    
+    }
+
+.Cursos{
+    color: #654321;                          /* Cor da fonte */
+    font-size: 20px;                          /* Tamanho da fonte */
+    text-align: center;                       /* Centralizando */
+    background-color: #f5f5dc;              /* Cor de fundo */
+    text-decoration: underline;               /* Sublinhar */
+    padding: 5px;                            /* Espaçamento interior */
+    border-style:double;
+        
+}
+
+.Idiomas{
+    color: #654321;                          /* Cor da fonte */
+    font-size: 20px;                          /* Tamanho da fonte */
+    text-align: center;                       /* Centralizando */
+    background-color: #f5f5dc;              /* Cor de fundo */
+    text-decoration: underline;               /* Sublinhar */
+    padding: 5px;                            /* Espaçamento interior */
+    border-style:double;
+}
+
+h3{
+    margin: 20px 150px 20px;
+    color: #654321;                         /* Cor da fonte */
+    font-size: 20px;                          /* Tamanho da fonte */
+    text-align: center;                       /* Centralizando */
+    background-color: #f5f5dc;              /* Cor de fundo */
+    text-decoration: underline;               /* Sublinhar */
+    padding: 5px;                             /* Espaçamento interior */
+    border-style:double;                      /* Borda*/
+}
+
+ul{
+    margin: 20px 150px 20px;                /*Espaçamento externo*/
+    padding-left: 0;                        /*Espaçamento da esquerda*/
+    text-align: center;                     /*Centralizando*/
+}
+
+li{
+    list-style: none;                       /*Tirando o marcador*/
+    display: inline-block;                  /*Mudando função*/
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    border-style: groove;
+    color: #654321;  
+    background-color: #f5f5dc;
+    display: inline-block;
+    padding: 10px;
+}
+
+a:hover{
+    background-color: #333;
+    color: #f5f5dc;
+    text-decoration: none;
+}
+    
+    
+
+
+
+
+
+
+
