@@ -18,8 +18,8 @@
         left: 0; /*faz ele grudar na esquerda */
     }
     main{
-        /*min-height: 100vh;*/
-        min-height: calc(100vh - 15rem);
+        /*min-height: 100vh; Desta maneira se eu aumentar meu quadro de pixels por exemplo um monitor maior, o elemento main não se ajusta ao tamanho*/
+        min-height: calc(100vh - 15rem); /* Desta maneira o elemento main se ajusta ao tamanho da tela*/
         background-color: #ccc;
         font-size: 2rem;
         margin-top: 15rem;
