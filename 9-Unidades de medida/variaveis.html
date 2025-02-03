@@ -2,33 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Unidades de medida</title>
+    <title>Variavel</title>
 <style> 
     
     html{
-    font-size: 62.5%;
+        font-size: 200%;
     }
-    header{
-        width: 100%;
-        background-color: yellow;
-        height: 15rem;
-        font-size: 2rem;
-        position: fixed; /* faz a fixação do elemento */
-        top: 0; /* faz ele grudar em cima*/
-        left: 0; /*faz ele grudar na esquerda */
+    :root{
+        --color: blue;
     }
-    main{
-        /*min-height: 100vh; Desta maneira se eu aumentar meu quadro de pixels por exemplo um monitor maior, o elemento main não se ajusta ao tamanho*/
-        min-height: calc(100vh - 15rem); /* Desta maneira o elemento main se ajusta ao tamanho da tela*/
-        background-color: #ccc;
-        font-size: 2rem;
-        margin-top: 15rem;
+    p{
+        color: var(--color);
     }
-    footer{
-        height: 10rem;
-        font-size: 2rem;
-        background-color: aliceblue;
-
+    .div1{
+        --color: green;
     }
 
 </style>
@@ -37,41 +24,29 @@
 <body>
 
     <!-- 
-    -> PX: O problema de udar px para tudo está relacionado com a sensibilidade. Dependendo das configurações do sistema operacional do usuário usar
-    px como medida pode sobrescrever as preferências deste usuários.
+    Variaveis
+    Declaração: 
+    --header-height: 15rem
+    --footer-widith: 15rem
+    como usar:
+    hight: var(--header-hight)
+
+    onde colocar:
+    :root que é basicamente igual o html no entanto não tem tanta especificidade.
     
-    Onde usar: Margins pequenas, Paddings pequenos, boxshadow, textshadow.
+    escopo de variaveis:
 
-    - EM: Equivale a 16 px e ele se ajusta as preferências do usário. Os EM subsequêntes herdam o tamanho do do elemento pai para fazer o calculo 
-    da medida. ou seja se dois EM está valendo 32px então, EM do elemento filho estará valendo 32 também, isso significa que para ter 16px que seria
-    o padrão do usuário a declaração deve ser 0.5 EM. 
-
-
-    - REM: Semelhante ao EM, no entanto o REM do elemento filho ignora o REM do elemento pai e passa a responder as preferências do usuário.
+    -->
     
-    - Isso serve tambem para ajustar elemento do mesmo bloco, por exemplo se um paragrafo meu possui 1 rem de fontsize e 1rem de de padding, o padding está respondendo
-    as configurações do uduário que pode ocasionar um padding desajustado. Se voce quer que o padding responda ao seu bloco de comando no caso o para
-    grafo, bas mudar o padding para 1EM, que resulta em um padding ajustado com a medida do fontsize do elemento.
+    <div class="container">
+        <div class="div1"> 
+            <p> Lorem, ipsum dolor. </p>
+        </div>
 
-    %: Para trabalhar com porcentagem, devemos entender qual o tamanho inicial do elemento.
+        <div class="div2"> 
+            <p> Lorem, ipsum dolor. </p>
+        </div>
 
-    view ports
-
-    - VW: width
-    - VH: Hight
-    
-    São relacionados com a largura da view port em porcentagens. Facilita a construção de páginas responsivas.
-
-    CH: Relativa ao numero 0 de determinado texto.
-
-    calc (): É uma função que faz o calculo com unidades de medida diferente possibilitando ajustes finos para um site responsivo
-    em qualquer resolução diferente isto é, tamanho de monitores diferentes...
-
-    --> 
-
-    <header> header </header>
-    <main> main </main>
-    <footer> footer </footer>
-
+    </div>
 </body>
 </html>
