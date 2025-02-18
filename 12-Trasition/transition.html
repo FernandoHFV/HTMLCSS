@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Transition</title>
+    <style>
+        div{
+            text-align: center;
+            background-color: blanchedalmond;
+            width: 200px;
+            height: 150px;
+            margin: 100px auto;
+            transition-property: width; /* Escolhe a propriedade*/
+            transition-duration: 1s; /* Escolhe a duração */
+            transition-timing-function: cubic-bezier(.59, -0.3, .49, 1.36);
+        }
+
+        div:hover{
+            width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div> Fernando </div>
+
+</body>
+</html>
